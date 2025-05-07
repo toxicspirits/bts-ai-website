@@ -15,7 +15,7 @@ const Hero = () => {
               creating value through AI-driven approaches.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-btsai-purple hover:bg-btsai-blue transition-colors text-white px-8 py-6 text-lg">
+              <Button className="bg-btsai-blue hover:bg-btsai-lightblue transition-colors text-white px-8 py-6 text-lg">
                 Get Started
               </Button>
               <Button variant="outline" className="border-btsai-blue text-btsai-blue hover:bg-btsai-blue/10 px-8 py-6 text-lg">
@@ -25,7 +25,7 @@ const Hero = () => {
           </div>
           <div className="md:w-1/2">
             <div className="relative">
-              <div className="bg-btsai-purple/20 absolute inset-0 rounded-lg transform rotate-3"></div>
+              <div className="bg-btsai-lightblue/20 absolute inset-0 rounded-lg transform rotate-3"></div>
               <img 
                 src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" 
                 alt="Smart Factory" 

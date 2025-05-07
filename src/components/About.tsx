@@ -33,7 +33,7 @@ const About = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-btsai-blue hover:bg-btsai-purple transition-colors">
+              <Button className="bg-btsai-blue hover:bg-btsai-lightblue transition-colors">
                 Learn More About Us
               </Button>
             </div>
@@ -59,7 +59,7 @@ const About = () => {
                   Would you like to learn more about the strategy and implementation of a smart factory 
                   and digital services? Then please feel free to contact us.
                 </p>
-                <Button className="bg-btsai-purple hover:bg-btsai-blue transition-colors">
+                <Button className="bg-btsai-blue hover:bg-btsai-lightblue transition-colors">
                   Contact Us
                 </Button>
               </div>

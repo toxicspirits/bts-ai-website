@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,10 +62,9 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// BTS AI custom colors
+				// BTS AI custom colors - removed purple, keeping only blue and related colors
 				btsai: {
 					blue: '#1E3A8A',
-					purple: '#8B5CF6',
 					lightblue: '#0EA5E9',
 					gray: '#64748B',
 					lightgray: '#F1F5F9'

@@ -35,7 +35,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between">
         <a href="#home" className="flex items-center">
-          <span className="text-2xl font-bold text-btsai-blue">BTS <span className="text-btsai-purple">AI</span></span>
+          <span className="text-2xl font-bold text-btsai-blue">BTS <span className="text-btsai-lightblue">AI</span></span>
         </a>
         
         {/* Desktop Menu */}
@@ -44,7 +44,7 @@ const Navbar = () => {
             <a
               key={item.title}
               href={item.href}
-              className="font-medium text-gray-600 hover:text-btsai-purple transition-colors"
+              className="font-medium text-gray-600 hover:text-btsai-blue transition-colors"
             >
               {item.title}
             </a>
@@ -52,7 +52,7 @@ const Navbar = () => {
         </div>
         
         <div className="hidden md:block">
-          <Button className="bg-btsai-purple hover:bg-btsai-blue transition-colors">
+          <Button className="bg-btsai-blue hover:bg-btsai-lightblue transition-colors">
             Contact Us
           </Button>
         </div>
@@ -85,14 +85,14 @@ const Navbar = () => {
               <a
                 key={item.title}
                 href={item.href}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-btsai-purple hover:bg-gray-50"
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-btsai-blue hover:bg-gray-50"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.title}
               </a>
             ))}
             <div className="px-3 py-2">
-              <Button className="w-full bg-btsai-purple hover:bg-btsai-blue transition-colors">
+              <Button className="w-full bg-btsai-blue hover:bg-btsai-lightblue transition-colors">
                 Contact Us
               </Button>
             </div>
