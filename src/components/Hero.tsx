@@ -7,6 +7,14 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-12 mb-10 md:mb-0">
+            <div className="mb-8 flex items-center">
+              <img 
+                src="/lovable-uploads/5a3c2604-cf41-477d-bdb3-9404ae4cd5f0.png" 
+                alt="BTS AI Logo" 
+                className="h-12 mr-3"
+              />
+              <span className="text-lg text-btsai-blue font-medium">Digital Transformation</span>
+            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-btsai-blue mb-6">
               Digital Transformation for Manufacturing Leaders
             </h1>
