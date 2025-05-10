@@ -12,7 +12,7 @@ const Hero = () => {
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
               BTS AI is your consultant and implementation partner for Lean Supply Chain & Manufacturing, 
-              creating value through AI-driven approaches.
+              creating value through AI-driven approaches. <span className="font-semibold">Connecting Values in AI.</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-btsai-blue hover:bg-btsai-lightblue transition-colors text-white px-8 py-6 text-lg">
