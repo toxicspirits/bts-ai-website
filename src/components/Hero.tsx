@@ -7,16 +7,9 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 md:pr-12 mb-10 md:mb-0">
-            <div className="flex items-center mb-6">
-              <img 
-                src="/lovable-uploads/5a3c2604-cf41-477d-bdb3-9404ae4cd5f0.png" 
-                alt="BTS AI Logo" 
-                className="h-16 mr-3"
-              />
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-btsai-blue">
-                Digital Transformation for Manufacturing Leaders
-              </h1>
-            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-btsai-blue mb-6">
+              Digital Transformation for Manufacturing Leaders
+            </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
               BTS AI is your consultant and implementation partner for Lean Supply Chain & Manufacturing, 
               creating value through AI-driven approaches.
