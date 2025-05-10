@@ -44,6 +44,23 @@ const Index = () => {
       </div>
       
       <div className="reveal">
+        <div className="py-12 bg-btsai-blue/5">
+          <div className="container mx-auto px-4 text-center">
+            <img 
+              src="/lovable-uploads/5a3c2604-cf41-477d-bdb3-9404ae4cd5f0.png" 
+              alt="BTS AI Logo" 
+              className="h-20 mx-auto mb-6"
+            />
+            <h2 className="text-3xl font-bold text-btsai-blue mb-4">Transforming Manufacturing with AI</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              BTS AI combines cutting-edge technology with deep industry expertise to drive efficiency, 
+              transparency, and innovation in manufacturing operations.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div className="reveal">
         <About />
       </div>
       
