@@ -35,7 +35,11 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between">
         <a href="#home" className="flex items-center">
-          <span className="text-2xl font-bold text-btsai-blue">BTS <span className="text-btsai-lightblue">AI</span></span>
+          <img 
+            src="/lovable-uploads/5a3c2604-cf41-477d-bdb3-9404ae4cd5f0.png" 
+            alt="BTS AI Logo" 
+            className="h-10 mr-2"
+          />
         </a>
         
         {/* Desktop Menu */}

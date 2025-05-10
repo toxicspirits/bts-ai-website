@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -62,9 +63,9 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// BTS AI custom colors - removed purple, keeping only blue and related colors
+				// BTS AI custom colors - using the blue from the logo
 				btsai: {
-					blue: '#1E3A8A',
+					blue: '#2F7BFF', // Updated to match the logo's blue
 					lightblue: '#0EA5E9',
 					gray: '#64748B',
 					lightgray: '#F1F5F9'
