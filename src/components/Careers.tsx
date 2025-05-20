@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Careers = () => {
   return (
@@ -41,9 +42,11 @@ const Careers = () => {
                 </li>
               </ul>
             </div>
-            <Button className="bg-btsai-purple hover:bg-btsai-blue transition-colors">
-              View Open Positions
-            </Button>
+            <Link to="/careers">
+              <Button className="bg-btsai-purple hover:bg-btsai-blue transition-colors">
+                View Open Positions
+              </Button>
+            </Link>
           </div>
           <div className="relative">
             <div className="bg-btsai-purple/20 absolute inset-0 rounded-lg transform rotate-2"></div>

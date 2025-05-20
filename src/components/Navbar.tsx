@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
     { title: "Products", href: "#products" },
     { title: "Services", href: "#services" },
     { title: "Company", href: "#about" },
-    { title: "Careers", href: "#careers" },
+    { title: "Careers", href: "/careers" }, // Updated to direct link to Careers page
   ];
 
   return (
@@ -35,13 +36,13 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img 
             src="/lovable-uploads/5a3c2604-cf41-477d-bdb3-9404ae4cd5f0.png" 
             alt="BTS AI Logo" 
             className="h-10 mr-2"
           />
-        </a>
+        </Link>
         
         {/* Empty space in the middle */}
         <div className="flex-grow"></div>
@@ -49,13 +50,23 @@ const Navbar = () => {
         {/* Navigation moved to right */}
         <div className="hidden md:flex space-x-8">
           {navItems.map((item) => (
-            <a
-              key={item.title}
-              href={item.href}
-              className="font-medium text-slate-700 hover:text-btsai-blue transition-colors"
-            >
-              {item.title}
-            </a>
+            item.href.startsWith('#') ? (
+              <a
+                key={item.title}
+                href={item.href}
+                className="font-medium text-slate-700 hover:text-btsai-blue transition-colors"
+              >
+                {item.title}
+              </a>
+            ) : (
+              <Link
+                key={item.title}
+                to={item.href}
+                className="font-medium text-slate-700 hover:text-btsai-blue transition-colors"
+              >
+                {item.title}
+              </Link>
+            )
           ))}
         </div>
         
@@ -90,14 +101,25 @@ const Navbar = () => {
         <div className="md:hidden bg-slate-50 shadow-lg absolute w-full">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
-              <a
-                key={item.title}
-                href={item.href}
-                className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-btsai-blue hover:bg-slate-100"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {item.title}
-              </a>
+              item.href.startsWith('#') ? (
+                <a
+                  key={item.title}
+                  href={item.href}
+                  className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-btsai-blue hover:bg-slate-100"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {item.title}
+                </a>
+              ) : (
+                <Link
+                  key={item.title}
+                  to={item.href}
+                  className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-btsai-blue hover:bg-slate-100"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {item.title}
+                </Link>
+              )
             ))}
             <div className="px-3 py-2">
               <Button className="w-full bg-btsai-blue hover:bg-btsai-lightblue transition-colors">
