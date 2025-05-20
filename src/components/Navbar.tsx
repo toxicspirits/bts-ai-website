@@ -29,8 +29,8 @@ const Navbar = () => {
       className={cn(
         "fixed w-full z-30 transition-all duration-300",
         isScrolled 
-          ? "bg-white shadow-md py-2" 
-          : "bg-transparent py-4"
+          ? "bg-slate-50 shadow-md py-2" 
+          : "bg-gradient-to-r from-slate-100 to-blue-50 py-4"
       )}
     >
       <div className="container mx-auto flex items-center justify-between">
@@ -52,7 +52,7 @@ const Navbar = () => {
             <a
               key={item.title}
               href={item.href}
-              className="font-medium text-gray-600 hover:text-btsai-blue transition-colors"
+              className="font-medium text-slate-700 hover:text-btsai-blue transition-colors"
             >
               {item.title}
             </a>
@@ -67,7 +67,7 @@ const Navbar = () => {
         
         {/* Mobile menu button */}
         <button 
-          className="md:hidden text-gray-500 focus:outline-none"
+          className="md:hidden text-slate-700 focus:outline-none"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           <svg 
@@ -87,13 +87,13 @@ const Navbar = () => {
       
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg absolute w-full">
+        <div className="md:hidden bg-slate-50 shadow-lg absolute w-full">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
               <a
                 key={item.title}
                 href={item.href}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-btsai-blue hover:bg-gray-50"
+                className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-btsai-blue hover:bg-slate-100"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.title}
