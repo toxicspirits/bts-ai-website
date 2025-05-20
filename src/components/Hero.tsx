@@ -7,14 +7,17 @@ const Hero = () => {
       id="home" 
       className="relative h-screen min-h-[600px] w-full bg-btsai-blue overflow-hidden"
     >
-      {/* Background image with overlay */}
+      {/* Background image with overlay and gradient */}
       <div className="absolute inset-0 z-10">
-        <img 
-          src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" 
-          alt="Smart Factory" 
-          className="w-full h-full object-cover opacity-40"
-        />
-        <div className="absolute inset-0 bg-btsai-blue/50"></div>
+        <div className="relative w-full h-full">
+          <img 
+            src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" 
+            alt="Smart Factory" 
+            className="w-full h-full object-cover opacity-40 scale-x-[-1]" // Flipped horizontally with scale-x-[-1]
+          />
+          {/* Gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-btsai-blue/70 via-btsai-blue/50 to-blue-900/60"></div>
+        </div>
         
         {/* Wave shape at bottom */}
         <div className="absolute bottom-0 left-0 right-0">
@@ -40,28 +43,29 @@ const Hero = () => {
             />
           </div>
           
-          {/* Main heading */}
+          {/* Updated main heading */}
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-            Art of <br />Automation
+            Transforming <br />Industrial Innovation
           </h1>
           
-          {/* Description paragraphs */}
+          {/* Updated description paragraphs */}
           <p className="text-lg md:text-xl mb-6 max-w-2xl">
-            We enable manufacturers to improve their business, delivering
-            transparency and control with software solutions and
-            consulting for automation.
+            Pioneering smart manufacturing solutions that drive efficiency, 
+            sustainability, and competitive advantage through cutting-edge 
+            automation technology.
           </p>
           
           <p className="text-lg md:text-xl mb-10 max-w-2xl">
-            30 Years experienced, more than 200 engineers strong,
-            automation experts worldwide.
+            With global expertise spanning three decades, our team of specialists 
+            delivers customized solutions to meet the evolving challenges of 
+            modern manufacturing.
           </p>
           
           {/* CTA Button */}
           <Button 
             className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg rounded-sm"
           >
-            LEARN MORE
+            DISCOVER SOLUTIONS
           </Button>
         </div>
       </div>
