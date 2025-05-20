@@ -34,6 +34,7 @@ const Navbar = () => {
       )}
     >
       <div className="container mx-auto flex items-center justify-between">
+        {/* Logo */}
         <a href="#home" className="flex items-center">
           <img 
             src="/lovable-uploads/5a3c2604-cf41-477d-bdb3-9404ae4cd5f0.png" 
@@ -42,7 +43,10 @@ const Navbar = () => {
           />
         </a>
         
-        {/* Desktop Menu */}
+        {/* Empty space in the middle */}
+        <div className="flex-grow"></div>
+        
+        {/* Navigation moved to right */}
         <div className="hidden md:flex space-x-8">
           {navItems.map((item) => (
             <a
@@ -55,7 +59,7 @@ const Navbar = () => {
           ))}
         </div>
         
-        <div className="hidden md:block">
+        <div className="hidden md:block ml-8">
           <Button className="bg-btsai-blue hover:bg-btsai-lightblue transition-colors">
             Contact Us
           </Button>
