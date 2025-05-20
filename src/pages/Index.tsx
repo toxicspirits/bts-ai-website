@@ -35,24 +35,26 @@ const Index = () => {
       <Navbar />
       <Hero />
       
-      <div className="reveal">
-        <Products />
-      </div>
-      
-      <div className="reveal">
-        <Services />
-      </div>
-      
-      <div className="reveal">
-        <About />
-      </div>
-      
-      <div className="reveal">
-        <Careers />
-      </div>
-      
-      <div className="reveal">
-        <ContactSection />
+      <div className="mt-0 pt-16">
+        <div className="reveal">
+          <Products />
+        </div>
+        
+        <div className="reveal">
+          <Services />
+        </div>
+        
+        <div className="reveal">
+          <About />
+        </div>
+        
+        <div className="reveal">
+          <Careers />
+        </div>
+        
+        <div className="reveal">
+          <ContactSection />
+        </div>
       </div>
       
       <footer className="bg-btsai-blue text-white py-10">

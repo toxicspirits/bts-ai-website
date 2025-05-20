@@ -3,59 +3,73 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-24 pb-12 md:pt-32 md:pb-20 bg-gradient-to-br from-white to-blue-50">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 md:pr-12 mb-10 md:mb-0">
-            <div className="mb-8 flex items-center">
-              <img 
-                src="/lovable-uploads/5a3c2604-cf41-477d-bdb3-9404ae4cd5f0.png" 
-                alt="BTS AI Logo" 
-                className="h-12 mr-3"
-              />
-              <span className="text-lg text-btsai-blue font-medium">Connecting Values in AI</span>
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-btsai-blue mb-6">
-              Digital Transformation for Manufacturing Leaders
-            </h1>
-            <p className="text-lg md:text-xl text-gray-700 mb-8">
-              BTS AI is your consultant and implementation partner for Lean Supply Chain & Manufacturing, 
-              creating value through AI-driven approaches.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-btsai-blue hover:bg-btsai-lightblue transition-colors text-white px-8 py-6 text-lg">
-                Get Started
-              </Button>
-              <Button variant="outline" className="border-btsai-blue text-btsai-blue hover:bg-btsai-blue/10 px-8 py-6 text-lg">
-                Learn More
-              </Button>
-            </div>
-          </div>
-          <div className="md:w-1/2">
-            <div className="relative">
-              <div className="bg-btsai-lightblue/20 absolute inset-0 rounded-lg transform rotate-3"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" 
-                alt="Smart Factory" 
-                className="rounded-lg shadow-xl relative z-10 object-cover w-full h-[400px]"
-              />
-            </div>
-          </div>
-        </div>
+    <section 
+      id="home" 
+      className="relative h-screen min-h-[600px] w-full bg-btsai-blue overflow-hidden"
+    >
+      {/* Background image with overlay */}
+      <div className="absolute inset-0 z-10">
+        <img 
+          src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" 
+          alt="Smart Factory" 
+          className="w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-btsai-blue/50"></div>
         
-        <div className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold text-btsai-blue mb-3">Transparent & Efficient</h3>
-            <p className="text-gray-600">Create productive and efficient systems with complete transparency.</p>
+        {/* Wave shape at bottom */}
+        <div className="absolute bottom-0 left-0 right-0">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full">
+            <path 
+              fill="#ffffff" 
+              fillOpacity="1" 
+              d="M0,128L80,138.7C160,149,320,171,480,165.3C640,160,800,128,960,122.7C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      
+      {/* Content */}
+      <div className="container mx-auto px-4 relative z-20 h-full flex flex-col justify-center">
+        <div className="max-w-3xl text-white">
+          {/* Logo and tagline */}
+          <div className="mb-8 flex items-center">
+            <img 
+              src="/lovable-uploads/5a3c2604-cf41-477d-bdb3-9404ae4cd5f0.png" 
+              alt="BTS AI Logo" 
+              className="h-16 mr-3 bg-white/90 p-2 rounded"
+            />
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold text-btsai-blue mb-3">Future-Proof Systems</h3>
-            <p className="text-gray-600">Connected systems with AI-driven approach for long-term sustainability.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold text-btsai-blue mb-3">Early Benefits</h3>
-            <p className="text-gray-600">Realize value quickly with accepted systems and agile implementation.</p>
-          </div>
+          
+          {/* Main heading */}
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+            Art of <br />Automation
+          </h1>
+          
+          {/* Description paragraphs */}
+          <p className="text-lg md:text-xl mb-6 max-w-2xl">
+            We enable manufacturers to improve their business, delivering
+            transparency and control with software solutions and
+            consulting for automation.
+          </p>
+          
+          <p className="text-lg md:text-xl mb-10 max-w-2xl">
+            30 Years experienced, more than 200 engineers strong,
+            automation experts worldwide.
+          </p>
+          
+          {/* CTA Button */}
+          <Button 
+            className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg rounded-sm"
+          >
+            LEARN MORE
+          </Button>
+        </div>
+      </div>
+      
+      {/* Optional Feature Blocks - Can be moved outside this component if needed */}
+      <div className="container mx-auto px-4 relative z-20 mt-auto hidden md:block">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          {/* Feature blocks will be shown in wider screens */}
         </div>
       </div>
     </section>
