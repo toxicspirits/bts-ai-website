@@ -65,7 +65,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <img 
-            src="assets/BTSAI Logo - New Blue.png"
+            src="assets/logo-2.png"
             alt="BTS AI Logo" 
             className="h-10 mr-2"
           />

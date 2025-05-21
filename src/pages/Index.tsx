@@ -57,18 +57,18 @@ const Index = () => {
         </div>
       </div>
       
-      <footer className="bg-btsai-blue text-white py-10">
+      <footer className="bg-btsai-lightblue text-white py-10">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0 flex items-center">
               <img 
-                src="/assets/5a3c2604-cf41-477d-bdb3-9404ae4cd5f0.png"
+                src="/assets/BTSAI Logo - New Blue.png"
                 alt="BTS AI Logo" 
                 className="h-10 mr-2"
               />
             </div>
             <div className="text-center md:text-right">
-              <p className="text-gray-300">© {new Date().getFullYear()} BTS AI Ltd. All rights reserved.</p>
+              <p className="text-white">© {new Date().getFullYear()} BTS AI Ltd. All rights reserved.</p>
             </div>
           </div>
         </div>
