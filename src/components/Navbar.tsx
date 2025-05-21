@@ -19,10 +19,10 @@ const Navbar = () => {
 
   const navItems = [
     { title: "Digital Transformation", href: "#home" },
-    { title: "Products", href: "#products" },
-    { title: "Services", href: "#services" },
-    { title: "Company", href: "#about" },
-    { title: "Careers", href: "#careers" }, // Updated to direct link to Careers page
+    { title: "Products", link: "#products" },
+    { title: "Services", link: "#services" },
+    { title: "Company", link: "#about" },
+    { title: "Careers", link: "#careers" }, // Updated to direct link to Careers page
   ];
 
   return (
@@ -53,13 +53,13 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-8">
           {navItems.map((item) => (
             item.href.startsWith('#') ? (
-              <a
+              <Link
                 key={item.title}
-                href={item.href}
+                to={item.href}
                 className="font-medium text-slate-700 hover:text-btsai-blue transition-colors"
               >
                 {item.title}
-              </a>
+              </Link>
             ) : (
               <Link
                 key={item.title}
