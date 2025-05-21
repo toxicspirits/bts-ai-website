@@ -42,11 +42,11 @@ const Careers = () => {
                 </li>
               </ul>
             </div>
-            <Link to="/careers">
-              <Button className="bg-btsai-purple hover:bg-btsai-blue transition-colors">
+            <a href ={"/careers"}>
+              <Button className="bg-btsai-blue hover:bg-btsai-lightblue">
                 View Open Positions
               </Button>
-            </Link>
+            </a>
           </div>
           <div className="relative">
             <div className="bg-btsai-purple/20 absolute inset-0 rounded-lg transform rotate-2"></div>

@@ -62,7 +62,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0 flex items-center">
               <img 
-                src="/lovable-uploads/5a3c2604-cf41-477d-bdb3-9404ae4cd5f0.png" 
+                src="/assets/5a3c2604-cf41-477d-bdb3-9404ae4cd5f0.png"
                 alt="BTS AI Logo" 
                 className="h-10 mr-2"
               />

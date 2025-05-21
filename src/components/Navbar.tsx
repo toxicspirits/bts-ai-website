@@ -22,7 +22,7 @@ const Navbar = () => {
     { title: "Products", href: "#products" },
     { title: "Services", href: "#services" },
     { title: "Company", href: "#about" },
-    { title: "Careers", href: "/careers" }, // Updated to direct link to Careers page
+    { title: "Careers", href: "#careers" }, // Updated to direct link to Careers page
   ];
 
   return (
@@ -38,12 +38,14 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <img 
-            src="/lovable-uploads/5a3c2604-cf41-477d-bdb3-9404ae4cd5f0.png" 
+            src="assets/BTSAI Logo - New Blue.png"
             alt="BTS AI Logo" 
             className="h-10 mr-2"
           />
+          <text color={"blue"}>
+            Connecting values in AI.
+          </text>
         </Link>
-        
         {/* Empty space in the middle */}
         <div className="flex-grow"></div>
         
@@ -71,9 +73,11 @@ const Navbar = () => {
         </div>
         
         <div className="hidden md:block ml-8">
+          <a href={"#contact"}>
           <Button className="bg-btsai-blue hover:bg-btsai-lightblue transition-colors">
             Contact Us
           </Button>
+        </a>
         </div>
         
         {/* Mobile menu button */}

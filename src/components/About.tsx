@@ -49,8 +49,8 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h4 className="text-xl font-semibold text-btsai-blue mb-3">BTS AI Ltd</h4>
-                <p className="text-gray-600 mb-1">Bangkok | Thailand</p>
-                <p className="text-gray-600 mb-1">Tel.: +66</p>
+                <p className="text-gray-600 mb-1">169 soi 1 udomsuk 58, mooban rangsiya, บางนา, Bang Na, Bangkok 10260</p>
+                <p className="text-gray-600 mb-1">Tel.: +66 081 812 6021</p>
                 <p className="text-gray-600">E-Mail: info@btsai.net</p>
               </div>
               <div>

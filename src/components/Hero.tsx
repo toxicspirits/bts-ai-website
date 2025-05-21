@@ -35,38 +35,26 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-20 h-full flex flex-col justify-center">
         <div className="max-w-3xl text-white">
           {/* Logo and tagline */}
-          <div className="mb-8 flex items-center">
-            <img 
-              src="/lovable-uploads/5a3c2604-cf41-477d-bdb3-9404ae4cd5f0.png" 
-              alt="BTS AI Logo" 
-              className="h-16 mr-3 bg-white/90 p-2 rounded"
-            />
-          </div>
           
           {/* Updated main heading */}
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-            Transforming <br />Industrial Innovation
+          <h1 className="text-5xl md:text-5xl font-bold leading-tight mb-6">
+            Digital Transformation for <br /> Manufacturing Leaders
           </h1>
           
           {/* Updated description paragraphs */}
           <p className="text-lg md:text-xl mb-6 max-w-2xl">
-            Pioneering smart manufacturing solutions that drive efficiency, 
-            sustainability, and competitive advantage through cutting-edge 
-            automation technology.
-          </p>
-          
-          <p className="text-lg md:text-xl mb-10 max-w-2xl">
-            With global expertise spanning three decades, our team of specialists 
-            delivers customized solutions to meet the evolving challenges of 
-            modern manufacturing.
+            BTS AI is your consultant and implementation partner for Lean Supply Chain & Manufacturing, creating value
+            through AI-driven approaches.
           </p>
           
           {/* CTA Button */}
+          <a href={"#products"}>
           <Button 
             className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 text-lg rounded-sm"
           >
             DISCOVER SOLUTIONS
           </Button>
+            </a>
         </div>
       </div>
       
