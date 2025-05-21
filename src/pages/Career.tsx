@@ -123,7 +123,7 @@ const EmptyState = () => (
   </div>
 );
 
-const Career = () => {
+const CareerOpenings = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredJobs, setFilteredJobs] = useState<JobPosting[]>(SAMPLE_JOBS);
   const [activeTab, setActiveTab] = useState("all");
@@ -350,4 +350,4 @@ const Career = () => {
   );
 };
 
-export default Career;
+export default CareerOpenings;

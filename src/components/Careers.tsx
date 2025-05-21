@@ -42,7 +42,7 @@ const Careers = () => {
                 </li>
               </ul>
             </div>
-            <a href ={"/careers"}>
+            <a href ={"/career-openings"}>
               <Button className="bg-btsai-blue hover:bg-btsai-lightblue">
                 View Open Positions
               </Button>
