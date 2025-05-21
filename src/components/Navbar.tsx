@@ -1,8 +1,8 @@
-
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -18,12 +18,39 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { title: "Digital Transformation", href: "#home" },
-    { title: "Products", href: "#products" },
-    { title: "Services", href: "#services" },
-    { title: "Company", href: "#about" },
-    { title: "Careers", href: "#careers" }, // Updated to direct link to Careers page
+    { title: "Digital Transformation", href: "/#home" },
+    { title: "Products", href: "/#products" },
+    { title: "Services", href: "/#services" },
+    { title: "Company", href: "/#about" },
+    { title: "Careers", href: "/#careers" },
   ];
+
+  const renderNavLink = (item) => {
+    if (item.href.startsWith("/#")) {
+      return (
+        <HashLink
+          key={item.title}
+          smooth
+          to={item.href}
+          className="font-medium text-slate-700 hover:text-btsai-blue transition-colors"
+          onClick={() => setIsMobileMenuOpen(false)}
+        >
+          {item.title}
+        </HashLink>
+      );
+    } else {
+      return (
+        <Link
+          key={item.title}
+          to={item.href}
+          className="font-medium text-slate-700 hover:text-btsai-blue transition-colors"
+          onClick={() => setIsMobileMenuOpen(false)}
+        >
+          {item.title}
+        </Link>
+      );
+    }
+  };
 
   return (
     <nav 
@@ -42,45 +69,27 @@ const Navbar = () => {
             alt="BTS AI Logo" 
             className="h-10 mr-2"
           />
-          <text color={"blue"}>
+          <span className="text-blue-700 font-semibold">
             Connecting values in AI.
-          </text>
+          </span>
         </Link>
-        {/* Empty space in the middle */}
+
         <div className="flex-grow"></div>
         
-        {/* Navigation moved to right */}
+        {/* Navigation - Desktop */}
         <div className="hidden md:flex space-x-8">
-          {navItems.map((item) => (
-            item.href.startsWith('#') ? (
-              <Link
-                key={item.title}
-                to={item.href}
-                className="font-medium text-slate-700 hover:text-btsai-blue transition-colors"
-              >
-                {item.title}
-              </Link>
-            ) : (
-              <Link
-                key={item.title}
-                to={item.href}
-                className="font-medium text-slate-700 hover:text-btsai-blue transition-colors"
-              >
-                {item.title}
-              </Link>
-            )
-          ))}
+          {navItems.map(renderNavLink)}
         </div>
         
         <div className="hidden md:block ml-8">
-          <a href={"#contact"}>
-          <Button className="bg-btsai-blue hover:bg-btsai-lightblue transition-colors">
-            Contact Us
-          </Button>
-        </a>
+          <HashLink smooth to="/#contact">
+            <Button className="bg-btsai-blue hover:bg-btsai-lightblue transition-colors">
+              Contact Us
+            </Button>
+          </HashLink>
         </div>
         
-        {/* Mobile menu button */}
+        {/* Mobile menu toggle */}
         <button 
           className="md:hidden text-slate-700 focus:outline-none"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -99,36 +108,18 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
-      
+
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-slate-50 shadow-lg absolute w-full">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            {navItems.map((item) => (
-              item.href.startsWith('#') ? (
-                <a
-                  key={item.title}
-                  href={item.href}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-btsai-blue hover:bg-slate-100"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {item.title}
-                </a>
-              ) : (
-                <Link
-                  key={item.title}
-                  to={item.href}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-btsai-blue hover:bg-slate-100"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {item.title}
-                </Link>
-              )
-            ))}
+            {navItems.map(renderNavLink)}
             <div className="px-3 py-2">
-              <Button className="w-full bg-btsai-blue hover:bg-btsai-lightblue transition-colors">
-                Contact Us
-              </Button>
+              <HashLink smooth to="/#contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button className="w-full bg-btsai-blue hover:bg-btsai-lightblue transition-colors">
+                  Contact Us
+                </Button>
+              </HashLink>
             </div>
           </div>
         </div>
