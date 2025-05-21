@@ -19,10 +19,10 @@ const Navbar = () => {
 
   const navItems = [
     { title: "Digital Transformation", href: "#home" },
-    { title: "Products", link: "#products" },
-    { title: "Services", link: "#services" },
-    { title: "Company", link: "#about" },
-    { title: "Careers", link: "#careers" }, // Updated to direct link to Careers page
+    { title: "Products", href: "#products" },
+    { title: "Services", href: "#services" },
+    { title: "Company", href: "#about" },
+    { title: "Careers", href: "#careers" }, // Updated to direct link to Careers page
   ];
 
   return (
