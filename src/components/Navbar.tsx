@@ -57,15 +57,15 @@ const Navbar = () => {
       className={cn(
         "fixed w-full z-30 transition-all duration-300",
         isScrolled 
-          ? "bg-slate-50 shadow-md py-2" 
-          : "bg-gradient-to-r from-slate-100 to-blue-50 py-4"
+          ? "bg-white bg-opacity-30 backdrop-blur-lg shadow-md py-2" 
+          : " bg-white backdrop-blur-lg py-4"
       )}
     >
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <img 
-            src="assets/logo-2.png"
+            src="assets/img.png"
             alt="BTS AI Logo" 
             className="h-10 mr-2"
           />

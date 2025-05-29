@@ -60,21 +60,25 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <Card key={index} className="border border-gray-200 hover:shadow-lg transition-shadow">
-              <CardHeader className="flex flex-row items-center gap-4">
-                <div className="bg-btsai-lightgray rounded-full p-2">
-                  {service.icon}
-                </div>
-                <CardTitle className="text-xl text-btsai-blue">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-gray-600">{service.description}</CardDescription>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="flex flex-wrap justify-center gap-8">
+  {services.map((service, index) => (
+    <Card
+      key={index}
+      className="w-full sm:w-[45%] lg:w-[30%] border border-gray-200 hover:shadow-lg transition-shadow"
+    >
+      <CardHeader className="flex flex-row items-center gap-4">
+        <div className="bg-btsai-lightgray rounded-full p-2">
+          {service.icon}
         </div>
+        <CardTitle className="text-xl text-btsai-blue">{service.title}</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription className="text-gray-600">{service.description}</CardDescription>
+      </CardContent>
+    </Card>
+  ))}
+</div>
+
       </div>
     </section>
   );
