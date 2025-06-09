@@ -1,5 +1,3 @@
-
-
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -62,7 +60,7 @@ const Index = () => {
         </div>
       </div>
       
-      <footer className="bg-btsai-lightblue text-white py-10">
+      <footer className="bg-btsai-blue text-white py-10">
   <div className="container mx-auto px-6">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8">
       

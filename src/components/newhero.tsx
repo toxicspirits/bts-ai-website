@@ -3,27 +3,27 @@ import { ChevronLeft, ChevronRight } from "lucide-react"; // optional icons (ins
 
 const slides = [
   {
-    image: "/assets/images/1.jpg",
+    image: "/assets/images/1.webp",
     headline: "Manufacturing Maturity Analysis",
     subheadline: "Assess your current processes and unlock operational excellence.",
   },
   {
-    image: "/assets/images/2.jpg",
+    image: "/assets/images/2.webp",
     headline: "Proof of Concept",
     subheadline: "Test and validate SAP solutions in real-world industrial environments.",
   },
   {
-    image: "/assets/images/3.jpg",
+    image: "/assets/images/3.webp",
     headline: "Legacy System Migration",
     subheadline: "Seamlessly migrate from outdated systems to SAP S/4HANA.",
   },
   {
-    image: "/assets/images/4.jpg",
+    image: "/assets/images/4.webp",
     headline: "Machine Integration with S/4HANA",
     subheadline: "Connect industrial machinery directly with your SAP landscape.",
   },
   {
-    image: "/assets/images/5.jpg",
+    image: "/assets/images/5.webp",
     headline: "IoT & Digital Twin",
     subheadline: "Digitize physical assets and monitor them in real time with SAP.",
   },
@@ -48,7 +48,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-screen w-full">
       {slides.map((slide, index) => (
         <div
           key={index}

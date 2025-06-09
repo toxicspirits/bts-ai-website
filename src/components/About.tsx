@@ -8,15 +8,15 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative">
           {/* Border Frame */}
           <div className="relative">
-            <div className="absolute top-[-5px] left-[-5px] h-[500px] w-full border-t-4 border-l-4 border-btsai-blue z-0 rounded-lg " />
+            <div className="absolute top-[-5px] left-[-5px] h-full w-full border-t-4 border-l-4 border-btsai-blue z-0 rounded-lg " />
             
             <motion.img
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              src="https://images.unsplash.com/photo-1487958449943-2429e8be8625"
+              src="/assets/images/about-us.webp"
               alt="BTS AI Office"
-              className="rounded-lg shadow-lg object-cover h-[500px] w-full relative z-10"
+              className="rounded-lg shadow-lg object-cover h-full w-full relative z-10"
             />
           </div>
 

@@ -137,7 +137,7 @@ const ContactSection = () => {
                   />
                 </div>
                 
-                <Button className="w-full md:w-auto bg-btsai-purple hover:bg-btsai-blue transition-colors">
+                <Button className="w-full md:w-auto bg-btsai-blue hover:bg-btsai-lightblue transition-colors">
                   Send Message
                 </Button>
               </form>
