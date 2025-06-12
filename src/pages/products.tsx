@@ -4,45 +4,45 @@ import Footer from "@/components/footer";
 
 const products = [
   {
-    title: "SAP BTP",
+    title: "SAP DM",
     description:
-      "SAP BPT (Business Process Testing) is a component of SAP Solution Manager that facilitates efficient, end-to-end testing of business processes across SAP landscapes...",
+      "Unlock the full potential of your production operations with SAP Digital Manufacturing (SAP DM). Our SAP DM solutions deliver real-time insights, intelligent execution, and seamless integration across the shop floor. From advanced analytics to automated workflows, we help enterprises drive efficiency, reduce downtime, and enable adaptive manufacturing processes that align with Industry 4.0 standards.",
     image: "https://content.cdn.sap.com/is/image/sap/294690:3840x2160?wid=433&hei=243&fit=stretch,1&resMode=sharp2",
   },
   {
     title: "Custom MES Development",
     description:
-      "Custom MES (Manufacturing Execution System) Development involves building a tailored software solution to manage and optimize shop floor operations...",
+      "When off-the-shelf MES solutions fall short, our custom MES development services deliver tailored functionality built on modern frameworks like .NET, Java, and Node.js. From production scheduling to quality assurance and performance analytics, we engineer scalable MES platforms that adapt to your unique process requirements and drive operational excellence.",
     image: "/assets/images/MES.jpg",
   },
   {
-    title: "SAP BPT",
+    title: "SAP BTP",
     description:
-      "SAP BPT (Business Process Testing) is a component of SAP Solution Manager that facilitates efficient, end-to-end testing of business processes...",
+      "Maximize innovation with custom development on SAP Business Technology Platform (SAP BTP). We create scalable, cloud-native applications and extensions that enhance your SAP ecosystem—whether it's building Fiori apps, integrating third-party APIs, or deploying AI/ML models. With SAP BTP, we empower your enterprise to innovate faster and adapt smarter.",
     image: "/assets/images/BTP.jpg",
   },
   {
     title: "SAP IBP",
     description:
-      "SAP IBP (Integrated Business Planning) is a cloud-based planning solution that enables real-time, end-to-end supply chain visibility and collaboration...",
-    image: "/assets/images/IBP.webp",
+      "Leverage the power of SAP IBP enhanced with custom interfaces and extensions developed in .NET and Java. Our solutions enable dynamic supply chain modeling, demand forecasting, and scenario planning. Whether integrating IBP with non-SAP systems or building custom planning logic, we ensure your supply chain remains agile and responsive.",
+    image: "/assets/images/IBP.jpg",
   },
   {
     title: "SAP ME",
     description:
-      "SAP BE (Business Explorer) is a suite of analytical tools within the SAP NetWeaver BI platform that allows users to create, view, and analyze business data...",
+      "Empower your discrete manufacturing operations with SAP ME, a robust manufacturing execution system tailored for precision, traceability, and compliance. We provide end-to-end deployment, configuration, and customization of SAP ME to help you standardize operations, reduce cycle times, and ensure product quality—ensuring your shop floor is connected, controlled, and agile.",
     image: "/assets/images/ME.jpg",
   },
   {
     title: "S4 HANA Integration",
     description:
-      "S/4HANA integration refers to seamless connectivity between SAP S/4HANA and other systems to enable real-time data exchange...",
-    image: "/assets/images/HANA.webp",
+      "Accelerate digital transformation with seamless S/4HANA integration across your enterprise landscape. We deliver comprehensive integration services that align SAP S/4HANA with both upstream and downstream systems including MES, PLM, CRM, and legacy platforms. Our approach ensures data consistency, optimized workflows, and real-time visibility across your value chain.",
+    image: "/assets/images/HANA.jpg",
   },
   {
     title: "Machine Connectivity",
     description:
-      "Machine connectivity refers to seamless integration and communication between machines, devices, and systems within an industrial or IoT environment...",
+      "We specialize in bridging the gap between OT and IT through machine connectivity solutions that bring real-time data from sensors, PLCs, and legacy equipment directly into your digital platforms. Whether integrating with OPC UA, MQTT, or proprietary protocols, we ensure scalable and secure data pipelines that enable predictive maintenance, performance monitoring, and smart decision-making on the factory floor.",
     image: "/assets/images/machine.jpg",
   },
 ];
