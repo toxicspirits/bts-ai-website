@@ -53,7 +53,7 @@ const Products = () => {
           <div className="relative">
             <div className="bg-btsai-blue/20 absolute inset-0 rounded-lg transform -rotate-3"></div>
             <img 
-              src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
+              src="/assets/img_3.png"
               alt="Virtual Worker Technology" 
               className="rounded-lg shadow-xl relative z-10 w-full h-[400px] object-cover"
             />

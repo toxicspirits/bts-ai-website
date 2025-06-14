@@ -68,7 +68,8 @@ const ProductsPage = () => {
         <div className="relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold">OUR PRODUCTS</h1>
           <p className="text-lg mt-4">
-            Subtitle placeholder Subtitle placeholder Subtitle placeholder
+            From Shop Floor to Cloud We Connect, Build, and Optimize.
+
           </p>
         </div>
       </div>
