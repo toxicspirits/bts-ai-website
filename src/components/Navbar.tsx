@@ -136,48 +136,62 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden bg-slate-50 shadow-lg absolute w-full">
-          <div className="px-2 pt-2 pb-3 space-y-2">
-            {navItems.map((item) => {
-              if (item.dropdown) {
-                return (
-                  <div key="services-mobile" className="px-3">
-                    <span className="block text-slate-700 font-medium mb-1">
-                      Services
-                    </span>
-                    <div className="pl-2 space-y-1">
-                      {serviceItems.map((subItem) => (
-                        <HashLink
-                          key={subItem.title}
-                          to={subItem.href}
-                          smooth
-                          className="block text-sm text-gray-700 hover:text-btsai-blue transition-colors"
-                          onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                          {subItem.title}
-                        </HashLink>
-                      ))}
-                    </div>
-                  </div>
-                );
-              }
-              return renderNavLink(item);
-            })}
-            <div className="px-3 py-2">
-              <HashLink
-                smooth
-                to="/#contact"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <Button className="w-full bg-btsai-blue hover:bg-btsai-lightblue transition-colors">
-                  Contact Us
-                </Button>
-              </HashLink>
+      {/* Mobile Menu */}
+{isMobileMenuOpen && (
+  <div className="md:hidden bg-white shadow-lg absolute w-full z-40">
+    <div className="px-4 pt-4 pb-4 space-y-4">
+      {navItems.map((item) => {
+        if (item.dropdown) {
+          return (
+            <div key="services-mobile">
+              <span className="block text-slate-900 font-semibold text-base mb-2">
+                Services
+              </span>
+              <div className="pl-3 space-y-2">
+                {serviceItems.map((subItem) => (
+                  <HashLink
+                    key={subItem.title}
+                    to={subItem.href}
+                    smooth
+                    className="block text-sm text-gray-700 hover:text-btsai-blue transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    • {subItem.title}
+                  </HashLink>
+                ))}
+              </div>
             </div>
-          </div>
-        </div>
-      )}
+          );
+        }
+
+        return (
+          <HashLink
+            key={item.title}
+            smooth
+            to={item.href}
+            className="block text-slate-900 font-medium text-base hover:text-btsai-blue transition-colors"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            {item.title}
+          </HashLink>
+        );
+      })}
+
+      {/* Contact Button */}
+      <div>
+        <HashLink
+          smooth
+          to="/#contact"
+          onClick={() => setIsMobileMenuOpen(false)}
+        >
+          <Button className="w-full bg-btsai-blue hover:bg-btsai-lightblue transition-colors">
+            Contact Us
+          </Button>
+        </HashLink>
+      </div>
+    </div>
+  </div>
+)}
     </nav>
   );
 };
