@@ -16,7 +16,7 @@ const products = [
     image: "/assets/images/MES.jpg",
   },
   {
-    title: "SAP BTP",
+    title: "SAP BPT",
     description:
       "SAP BPT (Business Process Testing) is a component of SAP Solution Manager that facilitates efficient, end-to-end testing of business processes...",
     image: "/assets/images/BTP.jpg",
