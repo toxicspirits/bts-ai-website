@@ -30,7 +30,7 @@ const proof = () => {
     <div className="font-sans">
       <Navbar />
       {/* Hero Section */}
-      <section className="relative h-screen w-full bg-cover bg-center" style={{ backgroundImage: "url('/assets/images/legacy.png')" }}>
+      <section className="relative h-screen w-full bg-cover bg-center" style={{ backgroundImage: "url('/assets/images/legacy.webp')" }}>
         <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center px-6">
           <div className="text-white max-w-4xl">
             <p className="text-sm text-blue-400 font-semibold uppercase mb-2">legacy system migration</p>
