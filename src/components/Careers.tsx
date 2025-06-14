@@ -78,7 +78,7 @@ const Careers = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100">
               <div className="text-btsai-purple font-semibold mb-2">July 8, 2025</div>
-              <h4 className="text-lg font-medium text-btsai-blue mb-2">SAP for Smart Manufacturing Webinar</h4>
+              <h4 className="text-lg font-medium text-btsai-blue mb-2">SAP® for Smart Manufacturing Webinar</h4>
               <p className="text-gray-600 mb-4">Online Event</p>
               <Button variant="outline" className="w-full border-btsai-purple text-btsai-purple hover:bg-btsai-purple/10">
                 Register

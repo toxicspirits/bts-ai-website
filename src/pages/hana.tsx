@@ -48,7 +48,7 @@ const hana = () => {
       <section className="px-6 py-12 bg-white max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-4">Machine Integration with S4 HANA</h2>
         <p className="text-gray-700 text-lg leading-relaxed">
-          Machine Integration with SAP S/4HANA is our specialized service designed to connect shop 
+          Machine Integration with SAP® S/4HANA is our specialized service designed to connect shop 
           floor equipment directly with your enterprise system to enable real-time data flow, analytics, 
           and automation. By bridging operational technology (OT) with information technology (IT), we empower 
           manufacturing organizations to achieve seamless production visibility, reduce manual intervention, and 

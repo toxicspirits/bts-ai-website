@@ -1,19 +1,28 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { ShieldCheck } from 'lucide-react';
 
 const Products = () => {
   const sapProducts = [
-    "SAP DM",
-    "SAP ME",
-    "SAP IBP",
+    "SAP® DM",
+    "SAP® ME",
+    "SAP® IBP",
     "Custom MES development using .Net, Java",
     "Machine connectivity",
     "S4 HANA integration",
-    "SAP BTP custom development"
+    "SAP® BTP custom development"
+  ];
+
+  const bgImages = [
+    "https://src.n-ix.com/uploads/2023/12/04/0cdcb54f-6364-43d0-be62-54d00ddfda13.webp",
+    "https://media.istockphoto.com/id/1392016982/photo/mixed-group-of-business-people-sitting-around-a-table-and-talking.jpg?s=612x612&w=0&k=20&c=d7mWQhdzKrowHYTWXXcCrNn02uyfLYQYB78M75G8lKg=",
+    "https://happay.com/blog/wp-content/uploads/sites/12/2023/06/supply-chain-management-happay.webp",
+    "https://xbsoftware.com/wp-content/uploads/2023/03/website-development-process-full-guide-1-twi.jpg",
+    "https://www.industrieinformatik.com/wp-content/uploads/2021/09/Arbeitsplatzdaten-erfassen-scaled.jpg",
+    "https://cdn.prod.website-files.com/6448bf6f064020ce1b2ca19d/659e6bf76febb36a0534e9d5_Exploring%20the%20Integration%20of%20Cloud-Based%20Machine%20Learning%20with%20Edge%20Devices.jpg",
+    "https://blog.planview.com/wp-content/uploads/2020/01/Top-6-Software-Development-Methodologies.jpg",
   ];
 
   return (
-    <section id="products" className="section bg-gradient-to-br from-btsai-blue/5 to-btsai-purple/5 py-16">
+    <section id="products" className="section bg-gradient-to-br from-btsai-blue/5 to-btsai-blue/5 py-16">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-btsai-blue mb-4">Our Products</h2>
@@ -62,9 +71,9 @@ const Products = () => {
 
         {/* SAP Products Section */}
         <div className="bg-white rounded-lg shadow-md p-8 border border-gray-200">
-          <h3 className="text-2xl font-bold text-btsai-blue mb-6">SAP Product Portfolio & Supply Chain</h3>
+          <h3 className="text-2xl font-bold text-btsai-blue mb-6">SAP® Product Portfolio & Supply Chain</h3>
           <p className="text-gray-700 mb-8">
-            To realize smart factories and digital services, we use the following SAP portfolio, among others:
+            To realize smart factories and digital services, we use the following SAP® portfolio, among others:
           </p>
 
           {/* Centered Card Grid */}
@@ -72,11 +81,18 @@ const Products = () => {
             {sapProducts.map((product, index) => (
               <Card
                 key={index}
-                className="w-full sm:w-[45%] lg:w-[22%] border border-gray-300 transition transform hover:scale-105 hover:shadow-lg bg-gradient-to-br from-white to-btsai-blue/5"
+                className="w-full sm:w-[45%] lg:w-[22%] h-40 relative group overflow-hidden border border-gray-300 transition transform hover:scale-105 hover:shadow-lg"
+                style={{
+                  backgroundImage: `url(${bgImages[index % bgImages.length]})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center"
+                }}
               >
-                <CardContent className="p-6 flex flex-col items-center text-center h-40 justify-center">
-                  <ShieldCheck/>
-                  <span className="text-gray-800 font-medium">{product}</span>
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition duration-300" />
+                <CardContent className="relative z-10 p-6 flex items-center justify-center h-full text-center">
+                  <span className="text-white group-hover:text-btsai-blue font-semibold transition-colors duration-300">
+                    {product}
+                  </span>
                 </CardContent>
               </Card>
             ))}
