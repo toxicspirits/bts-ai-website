@@ -25,7 +25,7 @@ const products = [
     title: "SAP IBP",
     description:
       "SAP IBP (Integrated Business Planning) is a cloud-based planning solution that enables real-time, end-to-end supply chain visibility and collaboration...",
-    image: "/assets/images/IBP.jpg",
+    image: "/assets/images/IBP.webp",
   },
   {
     title: "SAP ME",
@@ -37,7 +37,7 @@ const products = [
     title: "S4 HANA Integration",
     description:
       "S/4HANA integration refers to seamless connectivity between SAP S/4HANA and other systems to enable real-time data exchange...",
-    image: "/assets/images/HANA.jpg",
+    image: "/assets/images/HANA.webp",
   },
   {
     title: "Machine Connectivity",

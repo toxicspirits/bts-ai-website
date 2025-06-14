@@ -60,24 +60,24 @@ const Index = () => {
         </div>
       </div>
       
-      <footer className="bg-btsai-blue text-white py-10">
+      <footer className="bg-btsai-gray text-white py-10">
   <div className="container mx-auto px-6">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-8">
       
       {/* Company Info */}
       <div>
         <h4 className="text-xl font-semibold text-black mb-3">BTS AI Ltd</h4>
-        <p className="text-gray-600 mb-1">
+        <p className="text-gray-800 mb-1">
           <strong>Address:</strong> 169 soi 1 udomsuk 58, mooban rangsiya, บางนา, Bang Na, Bangkok 10260
         </p>
-        <p className="text-gray-600 mb-1"><strong>Tel:</strong> +66 081 812 6021</p>
-        <p className="text-gray-600"><strong>Email:</strong> info@btsai.net</p>
+        <p className="text-gray-800 mb-1"><strong>Tel:</strong> +66 081 812 6021</p>
+        <p className="text-gray-800"><strong>Email:</strong> info@btsai.net</p>
       </div>
 
       {/* Quick Links */}
       <div>
         <h4 className="text-xl font-semibold text-black mb-3 text-right">Quick Links</h4>
-        <ul className="text-gray-600 space-y-2">
+        <ul className="text-gray-700 space-y-2">
           <li className="text-right"><a href="/#home" className="hover:text-white">Digital Transformation</a></li>
           <li className="text-right"><a href="/#products" className="hover:text-white">Products</a></li>
           <li className="text-right"><a href="/#services" className="hover:text-white">Services</a></li>
@@ -91,9 +91,9 @@ const Index = () => {
     <div className="flex flex-col md:flex-row justify-between items-center border-t border-white/30 pt-6">
       <div className="mb-4 md:mb-0 flex items-center">
         <img 
-          src="/assets/BTSAI Logo - New Blue.png"
+          src="/assets/Logo-new.png"
           alt="BTS AI Logo" 
-          className="h-10"
+          className="h-12"
         />
       </div>
       <div className="text-center md:text-right">

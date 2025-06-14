@@ -52,7 +52,7 @@ export default function HeroSection() {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
+          className={`absolute top-0 left-0 w-1024 h-768 flex-row transition-opacity duration-1000 ease-in-out ${
             index === current ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         >
@@ -60,6 +60,7 @@ export default function HeroSection() {
             src={slide.image}
             alt={slide.headline}
             className="object-cover w-full h-full"
+            style={{height:800, width:1600}}
           />
           <div className="absolute inset-0 bg-black/50 flex flex-col justify-center text-left text-white px-6">
             <h1 className="text-4xl md:text-6xl ml-20 font-bold mb-4">{slide.headline}</h1>
