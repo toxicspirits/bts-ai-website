@@ -41,9 +41,9 @@ const About = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-btsai-blue hover:bg-btsai-lightblue transition-colors">
-                Learn More About Us
-              </Button>
+              {/*<Button className="bg-btsai-blue hover:bg-btsai-lightblue transition-colors">*/}
+              {/*  Learn More About Us*/}
+              {/*</Button>*/}
             </div>
           </div>
         </div>

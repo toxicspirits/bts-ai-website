@@ -66,31 +66,31 @@ const Careers = () => {
             <h3 className="text-2xl font-semibold text-btsai-blue">Upcoming Events</h3>
             <p className="text-gray-600">Where and when to find out more about smart factories and digital services</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-              <div className="text-btsai-purple font-semibold mb-2">June 15, 2025</div>
+              <div className="text-btsai-purple font-semibold mb-2">Date: To Be Announced</div>
               <h4 className="text-lg font-medium text-btsai-blue mb-2">Digital Manufacturing Summit</h4>
               <p className="text-gray-600 mb-4">Bangkok, Thailand</p>
-              <Button variant="outline" className="w-full border-btsai-purple text-btsai-purple hover:bg-btsai-purple/10">
-                Register
-              </Button>
+              {/*<Button variant="outline" className="w-full border-btsai-purple text-btsai-purple hover:bg-btsai-purple/10">*/}
+              {/*  Register*/}
+              {/*</Button>*/}
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-              <div className="text-btsai-purple font-semibold mb-2">July 8, 2025</div>
+              <div className="text-btsai-purple font-semibold mb-2">Date: To Be Announced</div>
               <h4 className="text-lg font-medium text-btsai-blue mb-2">SAP for Smart Manufacturing Webinar</h4>
               <p className="text-gray-600 mb-4">Online Event</p>
-              <Button variant="outline" className="w-full border-btsai-purple text-btsai-purple hover:bg-btsai-purple/10">
-                Register
-              </Button>
+              {/*<Button variant="outline" className="w-full border-btsai-purple text-btsai-purple hover:bg-btsai-purple/10">*/}
+              {/*  Register*/}
+              {/*</Button>*/}
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-gray-100">
-              <div className="text-btsai-purple font-semibold mb-2">August 22, 2025</div>
-              <h4 className="text-lg font-medium text-btsai-blue mb-2">Industry 4.0 Innovation Conference</h4>
+              <div className="text-btsai-purple font-semibold mb-2">Date: To Be Announced</div>
+              <h4 className="text-lg font-medium text-btsai-blue mb-2">Industry 5.0 Innovation Conference</h4>
               <p className="text-gray-600 mb-4">Singapore</p>
-              <Button variant="outline" className="w-full border-btsai-purple text-btsai-purple hover:bg-btsai-purple/10">
-                Register
-              </Button>
+              {/*<Button variant="outline" className="w-full border-btsai-purple text-btsai-purple hover:bg-btsai-purple/10">*/}
+              {/*  Register*/}
+              {/*</Button>*/}
             </div>
           </div>
         </div>
