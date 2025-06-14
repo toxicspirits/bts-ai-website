@@ -84,7 +84,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img src="assets/Logo-new.png" alt="BTS AI Logo" className="h-10 mr-2" />
+          <img src="assets/BTS-Logo-square.jpeg" alt="BTS AI Logo" className="h-10 mr-1" />
           <span className="text-blue-700 font-semibold">
             Connecting values in AI.
           </span>
