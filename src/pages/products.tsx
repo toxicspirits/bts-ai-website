@@ -4,9 +4,9 @@ import Footer from "@/components/footer";
 
 const products = [
   {
-    title: "SAP DM",
+    title: "SAP® DM",
     description:
-      "Unlock the full potential of your production operations with SAP Digital Manufacturing (SAP DM). Our SAP DM solutions deliver real-time insights, intelligent execution, and seamless integration across the shop floor. From advanced analytics to automated workflows, we help enterprises drive efficiency, reduce downtime, and enable adaptive manufacturing processes that align with Industry 4.0 standards.",
+      "Unlock the full potential of your production operations with SAP Digital Manufacturing (SAP® DM). Our SAP® DM solutions deliver real-time insights, intelligent execution, and seamless integration across the shop floor. From advanced analytics to automated workflows, we help enterprises drive efficiency, reduce downtime, and enable adaptive manufacturing processes that align with Industry 4.0 standards.",
     image: "https://content.cdn.sap.com/is/image/sap/294690:3840x2160?wid=433&hei=243&fit=stretch,1&resMode=sharp2",
   },
   {
@@ -16,27 +16,27 @@ const products = [
     image: "/assets/images/MES.jpg",
   },
   {
-    title: "SAP BTP",
+    title: "SAP® BTP",
     description:
-      "Maximize innovation with custom development on SAP Business Technology Platform (SAP BTP). We create scalable, cloud-native applications and extensions that enhance your SAP ecosystem—whether it's building Fiori apps, integrating third-party APIs, or deploying AI/ML models. With SAP BTP, we empower your enterprise to innovate faster and adapt smarter.",
+      "Maximize innovation with custom development on SAP® Business Technology Platform (SAP® BTP). We create scalable, cloud-native applications and extensions that enhance your SAP® ecosystem—whether it's building Fiori apps, integrating third-party APIs, or deploying AI/ML models. With SAP® BTP, we empower your enterprise to innovate faster and adapt smarter.",
     image: "/assets/images/BTP.jpg",
   },
   {
-    title: "SAP IBP",
+    title: "SAP® IBP",
     description:
-      "Leverage the power of SAP IBP enhanced with custom interfaces and extensions developed in .NET and Java. Our solutions enable dynamic supply chain modeling, demand forecasting, and scenario planning. Whether integrating IBP with non-SAP systems or building custom planning logic, we ensure your supply chain remains agile and responsive.",
+      "Leverage the power of SAP® IBP enhanced with custom interfaces and extensions developed in .NET and Java. Our solutions enable dynamic supply chain modeling, demand forecasting, and scenario planning. Whether integrating IBP with non-SAP® systems or building custom planning logic, we ensure your supply chain remains agile and responsive.",
     image: "/assets/images/IBP.jpg",
   },
   {
-    title: "SAP ME",
+    title: "SAP® ME",
     description:
-      "Empower your discrete manufacturing operations with SAP ME, a robust manufacturing execution system tailored for precision, traceability, and compliance. We provide end-to-end deployment, configuration, and customization of SAP ME to help you standardize operations, reduce cycle times, and ensure product quality—ensuring your shop floor is connected, controlled, and agile.",
+      "Empower your discrete manufacturing operations with SAP® ME, a robust manufacturing execution system tailored for precision, traceability, and compliance. We provide end-to-end deployment, configuration, and customization of SAP® ME to help you standardize operations, reduce cycle times, and ensure product quality—ensuring your shop floor is connected, controlled, and agile.",
     image: "/assets/images/ME.jpg",
   },
   {
     title: "S4 HANA Integration",
     description:
-      "Accelerate digital transformation with seamless S/4HANA integration across your enterprise landscape. We deliver comprehensive integration services that align SAP S/4HANA with both upstream and downstream systems including MES, PLM, CRM, and legacy platforms. Our approach ensures data consistency, optimized workflows, and real-time visibility across your value chain.",
+      "Accelerate digital transformation with seamless S/4HANA integration across your enterprise landscape. We deliver comprehensive integration services that align SAP® S/4HANA with both upstream and downstream systems including MES, PLM, CRM, and legacy platforms. Our approach ensures data consistency, optimized workflows, and real-time visibility across your value chain.",
     image: "/assets/images/HANA.jpg",
   },
   {
@@ -69,7 +69,6 @@ const ProductsPage = () => {
           <h1 className="text-4xl md:text-5xl font-bold">OUR PRODUCTS</h1>
           <p className="text-lg mt-4">
             From Shop Floor to Cloud We Connect, Build, and Optimize.
-
           </p>
         </div>
       </div>
