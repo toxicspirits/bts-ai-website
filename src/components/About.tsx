@@ -34,9 +34,9 @@ const About = () => {
               as the ability to act more dynamically with cloud technology.
             </p>
             <p className="text-gray-600 mb-8">
-              To implement intelligent factories in a networked environment, we use SAP's cloud innovation
-              portfolio for the digital supply chain based on the SAP Business Technology Platform,
-              such as SAP Digital Manufacturing (SAP DM) and more. We ensure the success of the digital
+              To implement intelligent factories in a networked environment, we use SAP's® cloud innovation
+              portfolio for the digital supply chain based on the SAP® Business Technology Platform,
+              such as SAP® Digital Manufacturing (SAP® DM) and more. We ensure the success of the digital
               transformation with accompanying change management.
             </p>
 
